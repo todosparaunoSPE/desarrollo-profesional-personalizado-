@@ -211,3 +211,6 @@ trayectoria_input = st.slider("Trayectoria Laboral", min_value=1, max_value=20, 
 prediccion = model.predict([[eval_input, trayectoria_input]])[0]
 retroalimentacion = {1: 'Positiva', 2: 'Neutral', 3: 'Negativa'}
 st.write(f"La retroalimentación predicha es: {retroalimentacion[prediccion]}")
+
+
+st.sidebar.write("© 2024 Creado por: Javier Horacio Pérez Ricárdez")
